@@ -18,15 +18,6 @@
 		</exec>
 	</target>
 
-	<target name="phpcs">
-		<exec executable="phpcs"> 
-			<arg line="--report=checkstyle
-              			--report-file=${output}/phpcs/checkstyle.xml
-              			--standard=Zend
-              			${basedir}" />
-		</exec>
-	</target>
-
 	<target name="phpmd">
 		<exec executable="phpmd">
 			<arg line="
@@ -54,4 +45,13 @@
 			" />
 		</exec>
 	</target>
+
+	<target name="phpcs">
+		<exec executable="phpcs"> 
+			<arg line="--report=checkstyle
+              			--report-file=${output}/phpcs/checkstyle.xml
+              			--standard=Zend
+              			${basedir}" />
+		</exec>
+	</target>	
 </project>
