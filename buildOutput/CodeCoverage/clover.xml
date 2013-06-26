@@ -1,0 +1,10 @@
+<project name="Test" default="build" basedir=".">
+	<property name="output" location="${basedir}/buildOutput/"/>
+	<target name="test">
+		<exec executable="phpunit" failonerror="true">
+			<arg line="--coverage-clover ${output}/CodeCoverage/clover.xml 
+				--coverage-html ${output}/CodeCoverage/ 
+				."/>
+		</exec>
+	</target>
+</project>	

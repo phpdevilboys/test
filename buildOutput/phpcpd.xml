@@ -1,0 +1,10 @@
+<project name="Test" default="build" basedir=".">
+	<property name="output" location="${basedir}/buildOutput/"/>
+	<target name="phpcpd">
+		<exec executable="phpcpd">
+			<arg line="
+				 --log-pmd ${output}/phpcpd.xml .
+			" />
+		</exec>
+	</target>
+</project>	
