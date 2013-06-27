@@ -1,14 +1,14 @@
 <?php
 
 require_once 'PHPUnit/Framework.php';
-require_once ("../spyc.php");
+require_once (dirname(dirname(__FILE__))."/spyc.php");
 
 class ParseTest extends PHPUnit_Framework_TestCase {
 
     protected $yaml;
 
     protected function setUp() {
-      $this->yaml = spyc_load_file('../spyc.yaml');
+      $this->yaml = spyc_load_file(dirname(dirname(__FILE__)).'/spyc.yaml');
     }
 
     public function testMergeHashKeys() {

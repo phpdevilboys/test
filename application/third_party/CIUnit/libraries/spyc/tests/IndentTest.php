@@ -1,6 +1,6 @@
 <?php
 
-require_once ("../spyc.php");
+require_once (dirname(dirname(__FILE__))."/spyc.php");
 
 class IndentTest extends PHPUnit_Framework_TestCase {
 
