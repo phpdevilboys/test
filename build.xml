@@ -51,7 +51,8 @@
 			<arg line="--report=checkstyle
               			--report-file=${output}/phpcs/checkstyle.xml
               			--standard=Zend
-              			${basedir}" />
+              			. 
+              		" />
 		</exec>
 	</target>	
 </project>
