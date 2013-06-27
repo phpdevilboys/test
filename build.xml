@@ -5,13 +5,14 @@
 		<mkdir dir="${output}"/>
 		<mkdir dir="${output}/phpcs/"/>
 		<mkdir dir="${output}/pdepend/"/>
+		<chdir dir="${basedir}/tests/"/>
 	</target>
 
-	<target name="build" depends="init, phpmd, phpcpd, pdepend,test">
+	<target name="build" depends="init, test, phpmd, phpcpd, pdepend, phpcs">
 	</target>
 
 	<target name="test">
-		<exec executable="cd tests;phpunit" failonerror="true">
+		<exec executable="phpunit" failonerror="false">
 			<arg line="--coverage-clover ${output}/CodeCoverage/clover.xml 
 				--coverage-html ${output}/CodeCoverage/ 
 				."/>
@@ -46,4 +47,12 @@
 		</exec>
 	</target>
 
+	<target name="phpcs">
+		<exec executable="phpcs"> 
+			<arg line="--report=checkstyle
+              			--report-file=${output}/phpcs/checkstyle.xml
+              			--standard=Zend
+              			${basedir}" />
+		</exec>
+	</target>	
 </project>
