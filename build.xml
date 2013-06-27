@@ -47,7 +47,7 @@
 	</target>
 
 	<target name="phpcs">
-		<exec dir="${basedir}" executable="phpcs" failonerror="true"> 
+		<exec dir="${basedir}/application/" executable="phpcs" failonerror="true"> 
 			<arg line="--report=checkstyle
               			--report-file=${output}/phpcs/checkstyle.xml
               			--standard=Zend
