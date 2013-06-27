@@ -1,5 +1,6 @@
 <?php
 
+// Autoload the PHPUnit Framework
 require_once 'PHPUnit/Framework.php';
 require_once (dirname(dirname(__FILE__))."/spyc.php");
 
