@@ -1,0 +1,72 @@
+first:
+    yodlee_transaction_id: 
+    account_name: 
+    amount: 
+    currency_code: 
+    currency_id: 
+    category: 
+    category_id: 
+    category_type_id: 
+    container: 
+    item_account_id: 
+    txn_base_type: 
+    business_expense: 
+    medical_expense: 
+    memo: 
+    reimbursable: 
+    txt_simple_description: 
+    shared_txn: 
+    tax_deductible: 
+    txn_id: 
+    txn_status: 
+    created_date: 
+    portfolio_id: 
+
+second:
+    yodlee_transaction_id: 
+    account_name: 
+    amount: 
+    currency_code: 
+    currency_id: 
+    category: 
+    category_id: 
+    category_type_id: 
+    container: 
+    item_account_id: 
+    txn_base_type: 
+    business_expense: 
+    medical_expense: 
+    memo: 
+    reimbursable: 
+    txt_simple_description: 
+    shared_txn: 
+    tax_deductible: 
+    txn_id: 
+    txn_status: 
+    created_date: 
+    portfolio_id: 
+
+third:
+    yodlee_transaction_id: 
+    account_name: 
+    amount: 
+    currency_code: 
+    currency_id: 
+    category: 
+    category_id: 
+    category_type_id: 
+    container: 
+    item_account_id: 
+    txn_base_type: 
+    business_expense: 
+    medical_expense: 
+    memo: 
+    reimbursable: 
+    txt_simple_description: 
+    shared_txn: 
+    tax_deductible: 
+    txn_id: 
+    txn_status: 
+    created_date: 
+    portfolio_id: 
+

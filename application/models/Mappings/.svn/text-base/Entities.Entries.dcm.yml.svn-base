@@ -1,0 +1,68 @@
+Entities\Entries:
+  type: entity
+  table: entries
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    slug:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    title:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    urlTitle:
+      type: string
+      length: 100
+      fixed: false
+      nullable: true
+      column: url_title
+    required:
+      type: smallint
+      nullable: false
+    contentTypeId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: content_type_id
+    status:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    metaTitle:
+      type: string
+      length: 65
+      fixed: false
+      nullable: true
+      column: meta_title
+    metaDescription:
+      type: text
+      nullable: true
+      column: meta_description
+    metaKeywords:
+      type: text
+      nullable: true
+      column: meta_keywords
+    createdDate:
+      type: datetime
+      nullable: false
+      column: created_date
+    modifiedDate:
+      type: datetime
+      nullable: false
+      column: modified_date
+    authorId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: author_id
+  lifecycleCallbacks: {  }

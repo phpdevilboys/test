@@ -1,0 +1,51 @@
+first:
+    id: 
+    title: 
+    short_name: 
+    layout: 
+    page_head: 
+    theme_layout: 
+    dynamic_route: 
+    required: 
+    access: 
+    restrict_to: 
+    restrict_admin_access: 
+    enable_versioning: 
+    max_revisions: 
+    entries_allowed: 
+    category_group_id: 
+
+second:
+    id: 
+    title: 
+    short_name: 
+    layout: 
+    page_head: 
+    theme_layout: 
+    dynamic_route: 
+    required: 
+    access: 
+    restrict_to: 
+    restrict_admin_access: 
+    enable_versioning: 
+    max_revisions: 
+    entries_allowed: 
+    category_group_id: 
+
+third:
+    id: 
+    title: 
+    short_name: 
+    layout: 
+    page_head: 
+    theme_layout: 
+    dynamic_route: 
+    required: 
+    access: 
+    restrict_to: 
+    restrict_admin_access: 
+    enable_versioning: 
+    max_revisions: 
+    entries_allowed: 
+    category_group_id: 
+

@@ -1,0 +1,27 @@
+Entities\Settings:
+  type: entity
+  table: settings
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    slug:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+    value:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    module:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+  lifecycleCallbacks: {  }

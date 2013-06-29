@@ -1,0 +1,33 @@
+Entities\GmaAssetAllocationDetails:
+  type: entity
+  table: gma_asset_allocation_details
+  fields:
+    assetAllocationDetailId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: asset_allocation_detail_id
+      generator:
+        strategy: SEQUENCE
+    assetPercentage:
+      type: float
+      nullable: true
+      column: asset_percentage
+    classId:
+      type: string
+      length: 45
+      fixed: false
+      nullable: true
+      column: class_id
+  manyToOne:
+    assetAllocation:
+      targetEntity: GmaAssetAllocation
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        asset_allocation_id:
+          referencedColumnName: asset_allocation_id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

@@ -1,0 +1,20 @@
+Entities\Navigations:
+  type: entity
+  table: navigations
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    required:
+      type: smallint
+      nullable: false
+  lifecycleCallbacks: {  }

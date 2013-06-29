@@ -1,0 +1,22 @@
+Entities\CategoriesEntries:
+  type: entity
+  table: categories_entries
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    categoryId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: category_id
+    entryId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: entry_id
+  lifecycleCallbacks: {  }

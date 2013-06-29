@@ -1,0 +1,52 @@
+Entities\GmaEmailSettings:
+  type: entity
+  table: gma_email_settings
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    host:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+    username:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+    password:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+    supportEmail:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: support_email
+    contactEmail:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: contact_email
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    protocol:
+      type: string
+      length: 10
+      fixed: false
+      nullable: true
+  lifecycleCallbacks: {  }

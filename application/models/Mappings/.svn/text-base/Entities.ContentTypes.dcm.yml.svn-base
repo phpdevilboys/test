@@ -1,0 +1,75 @@
+Entities\ContentTypes:
+  type: entity
+  table: content_types
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    shortName:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+      column: short_name
+    layout:
+      type: text
+      nullable: true
+    pageHead:
+      type: text
+      nullable: true
+      column: page_head
+    themeLayout:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: theme_layout
+    dynamicRoute:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: dynamic_route
+    required:
+      type: smallint
+      nullable: false
+    access:
+      type: smallint
+      nullable: false
+    restrictTo:
+      type: text
+      nullable: true
+      column: restrict_to
+    restrictAdminAccess:
+      type: smallint
+      nullable: false
+      column: restrict_admin_access
+    enableVersioning:
+      type: smallint
+      nullable: false
+      column: enable_versioning
+    maxRevisions:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: max_revisions
+    entriesAllowed:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: entries_allowed
+    categoryGroupId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: category_group_id
+  lifecycleCallbacks: {  }

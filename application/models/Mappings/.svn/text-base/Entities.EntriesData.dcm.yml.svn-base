@@ -1,0 +1,25 @@
+Entities\EntriesData:
+  type: entity
+  table: entries_data
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    entryId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: entry_id
+    fieldId1:
+      type: text
+      nullable: true
+      column: field_id_1
+    fieldId2:
+      type: text
+      nullable: true
+      column: field_id_2
+  lifecycleCallbacks: {  }

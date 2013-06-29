@@ -1,0 +1,24 @@
+first:
+    default_asset_allocation_id: 
+    start_date: 
+    end_date: 
+    aam_cat_id: 
+    created_date: 
+    portfolio_id: 
+
+second:
+    default_asset_allocation_id: 
+    start_date: 
+    end_date: 
+    aam_cat_id: 
+    created_date: 
+    portfolio_id: 
+
+third:
+    default_asset_allocation_id: 
+    start_date: 
+    end_date: 
+    aam_cat_id: 
+    created_date: 
+    portfolio_id: 
+

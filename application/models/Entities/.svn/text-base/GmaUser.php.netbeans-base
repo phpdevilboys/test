@@ -1,0 +1,760 @@
+<?php
+
+namespace Entities;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Entities\GmaUser
+ *
+ * @ORM\Table(name="gma_user")
+ * @ORM\Entity
+ */
+class GmaUser
+{
+    /**
+     * @var integer $userId
+     *
+     * @ORM\Column(name="user_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="gma_user_user_id_seq", allocationSize="1", initialValue="1")
+     */
+    private $userId;
+
+    /**
+     * @var string $emailId
+     *
+     * @ORM\Column(name="email_id", type="string", length=100, nullable=false)
+     */
+    private $emailId;
+
+    /**
+     * @var string $password
+     *
+     * @ORM\Column(name="password", type="string", length=255, nullable=false)
+     */
+    private $password;
+
+    /**
+     * @var string $title
+     *
+     * @ORM\Column(name="title", type="string", length=20, nullable=true)
+     */
+    private $title;
+
+    /**
+     * @var string $firstName
+     *
+     * @ORM\Column(name="first_name", type="string", length=150, nullable=true)
+     */
+    private $firstName;
+
+    /**
+     * @var string $lastName
+     *
+     * @ORM\Column(name="last_name", type="string", length=150, nullable=true)
+     */
+    private $lastName;
+
+    /**
+     * @var string $mobileNum
+     *
+     * @ORM\Column(name="mobile_num", type="string", length=20, nullable=true)
+     */
+    private $mobileNum;
+
+    /**
+     * @var string $secEmailId
+     *
+     * @ORM\Column(name="sec_email_id", type="string", length=100, nullable=true)
+     */
+    private $secEmailId;
+
+    /**
+     * @var string $suffix
+     *
+     * @ORM\Column(name="suffix", type="string", length=20, nullable=true)
+     */
+    private $suffix;
+
+    /**
+     * @var string $gender
+     *
+     * @ORM\Column(name="gender", type="string", length=255, nullable=true)
+     */
+    private $gender;
+
+    /**
+     * @var string $addressLine1
+     *
+     * @ORM\Column(name="address_line_1", type="string", length=255, nullable=true)
+     */
+    private $addressLine1;
+
+    /**
+     * @var string $addressLine2
+     *
+     * @ORM\Column(name="address_line_2", type="string", length=255, nullable=true)
+     */
+    private $addressLine2;
+
+    /**
+     * @var string $city
+     *
+     * @ORM\Column(name="city", type="string", length=100, nullable=true)
+     */
+    private $city;
+
+    /**
+     * @var string $state
+     *
+     * @ORM\Column(name="state", type="string", length=100, nullable=true)
+     */
+    private $state;
+
+    /**
+     * @var integer $zipCode
+     *
+     * @ORM\Column(name="zip_code", type="integer", nullable=true)
+     */
+    private $zipCode;
+
+    /**
+     * @var integer $securityQues1
+     *
+     * @ORM\Column(name="security_ques_1", type="integer", nullable=true)
+     */
+    private $securityQues1;
+
+    /**
+     * @var string $securityAns1
+     *
+     * @ORM\Column(name="security_ans_1", type="string", length=255, nullable=true)
+     */
+    private $securityAns1;
+
+    /**
+     * @var integer $securityQues2
+     *
+     * @ORM\Column(name="security_ques_2", type="integer", nullable=true)
+     */
+    private $securityQues2;
+
+    /**
+     * @var string $securityAns2
+     *
+     * @ORM\Column(name="security_ans_2", type="string", length=255, nullable=true)
+     */
+    private $securityAns2;
+
+    /**
+     * @var datetime $createdDate
+     *
+     * @ORM\Column(name="created_date", type="datetime", nullable=true)
+     */
+    private $createdDate;
+
+    /**
+     * @var boolean $isEmailVarified
+     *
+     * @ORM\Column(name="is_email_varified", type="boolean", nullable=true)
+     */
+    private $isEmailVarified;
+
+    /**
+     * @var boolean $isReceiveMail
+     *
+     * @ORM\Column(name="is_receive_mail", type="boolean", nullable=true)
+     */
+    private $isReceiveMail;
+
+    /**
+     * @var boolean $isActive
+     *
+     * @ORM\Column(name="is_active", type="boolean", nullable=true)
+     */
+    private $isActive;
+
+    /**
+     * @var boolean $isAgreeTAndC
+     *
+     * @ORM\Column(name="is_agree_t_and_c", type="boolean", nullable=true)
+     */
+    private $isAgreeTAndC;
+
+    /**
+     * @var boolean $isCompleteProfile
+     *
+     * @ORM\Column(name="is_complete_profile", type="boolean", nullable=true)
+     */
+    private $isCompleteProfile;
+
+    /**
+     * @var date $dateOfBirth
+     *
+     * @ORM\Column(name="date_of_birth", type="date", nullable=true)
+     */
+    private $dateOfBirth;
+
+
+    /**
+     * Get userId
+     *
+     * @return integer 
+     */
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+
+    /**
+     * Set emailId
+     *
+     * @param string $emailId
+     * @return GmaUser
+     */
+    public function setEmailId($emailId)
+    {
+        $this->emailId = $emailId;
+        return $this;
+    }
+
+    /**
+     * Get emailId
+     *
+     * @return string 
+     */
+    public function getEmailId()
+    {
+        return $this->emailId;
+    }
+
+    /**
+     * Set password
+     *
+     * @param string $password
+     * @return GmaUser
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+        return $this;
+    }
+
+    /**
+     * Get password
+     *
+     * @return string 
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return GmaUser
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string 
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set firstName
+     *
+     * @param string $firstName
+     * @return GmaUser
+     */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+        return $this;
+    }
+
+    /**
+     * Get firstName
+     *
+     * @return string 
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * Set lastName
+     *
+     * @param string $lastName
+     * @return GmaUser
+     */
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+        return $this;
+    }
+
+    /**
+     * Get lastName
+     *
+     * @return string 
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * Set mobileNum
+     *
+     * @param string $mobileNum
+     * @return GmaUser
+     */
+    public function setMobileNum($mobileNum)
+    {
+        $this->mobileNum = $mobileNum;
+        return $this;
+    }
+
+    /**
+     * Get mobileNum
+     *
+     * @return string 
+     */
+    public function getMobileNum()
+    {
+        return $this->mobileNum;
+    }
+
+    /**
+     * Set secEmailId
+     *
+     * @param string $secEmailId
+     * @return GmaUser
+     */
+    public function setSecEmailId($secEmailId)
+    {
+        $this->secEmailId = $secEmailId;
+        return $this;
+    }
+
+    /**
+     * Get secEmailId
+     *
+     * @return string 
+     */
+    public function getSecEmailId()
+    {
+        return $this->secEmailId;
+    }
+
+    /**
+     * Set suffix
+     *
+     * @param string $suffix
+     * @return GmaUser
+     */
+    public function setSuffix($suffix)
+    {
+        $this->suffix = $suffix;
+        return $this;
+    }
+
+    /**
+     * Get suffix
+     *
+     * @return string 
+     */
+    public function getSuffix()
+    {
+        return $this->suffix;
+    }
+
+    /**
+     * Set gender
+     *
+     * @param string $gender
+     * @return GmaUser
+     */
+    public function setGender($gender)
+    {
+        $this->gender = $gender;
+        return $this;
+    }
+
+    /**
+     * Get gender
+     *
+     * @return string 
+     */
+    public function getGender()
+    {
+        return $this->gender;
+    }
+
+    /**
+     * Set addressLine1
+     *
+     * @param string $addressLine1
+     * @return GmaUser
+     */
+    public function setAddressLine1($addressLine1)
+    {
+        $this->addressLine1 = $addressLine1;
+        return $this;
+    }
+
+    /**
+     * Get addressLine1
+     *
+     * @return string 
+     */
+    public function getAddressLine1()
+    {
+        return $this->addressLine1;
+    }
+
+    /**
+     * Set addressLine2
+     *
+     * @param string $addressLine2
+     * @return GmaUser
+     */
+    public function setAddressLine2($addressLine2)
+    {
+        $this->addressLine2 = $addressLine2;
+        return $this;
+    }
+
+    /**
+     * Get addressLine2
+     *
+     * @return string 
+     */
+    public function getAddressLine2()
+    {
+        return $this->addressLine2;
+    }
+
+    /**
+     * Set city
+     *
+     * @param string $city
+     * @return GmaUser
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+        return $this;
+    }
+
+    /**
+     * Get city
+     *
+     * @return string 
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * Set state
+     *
+     * @param string $state
+     * @return GmaUser
+     */
+    public function setState($state)
+    {
+        $this->state = $state;
+        return $this;
+    }
+
+    /**
+     * Get state
+     *
+     * @return string 
+     */
+    public function getState()
+    {
+        return $this->state;
+    }
+
+    /**
+     * Set zipCode
+     *
+     * @param integer $zipCode
+     * @return GmaUser
+     */
+    public function setZipCode($zipCode)
+    {
+        $this->zipCode = $zipCode;
+        return $this;
+    }
+
+    /**
+     * Get zipCode
+     *
+     * @return integer 
+     */
+    public function getZipCode()
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * Set securityQues1
+     *
+     * @param integer $securityQues1
+     * @return GmaUser
+     */
+    public function setSecurityQues1($securityQues1)
+    {
+        $this->securityQues1 = $securityQues1;
+        return $this;
+    }
+
+    /**
+     * Get securityQues1
+     *
+     * @return integer 
+     */
+    public function getSecurityQues1()
+    {
+        return $this->securityQues1;
+    }
+
+    /**
+     * Set securityAns1
+     *
+     * @param string $securityAns1
+     * @return GmaUser
+     */
+    public function setSecurityAns1($securityAns1)
+    {
+        $this->securityAns1 = $securityAns1;
+        return $this;
+    }
+
+    /**
+     * Get securityAns1
+     *
+     * @return string 
+     */
+    public function getSecurityAns1()
+    {
+        return $this->securityAns1;
+    }
+
+    /**
+     * Set securityQues2
+     *
+     * @param integer $securityQues2
+     * @return GmaUser
+     */
+    public function setSecurityQues2($securityQues2)
+    {
+        $this->securityQues2 = $securityQues2;
+        return $this;
+    }
+
+    /**
+     * Get securityQues2
+     *
+     * @return integer 
+     */
+    public function getSecurityQues2()
+    {
+        return $this->securityQues2;
+    }
+
+    /**
+     * Set securityAns2
+     *
+     * @param string $securityAns2
+     * @return GmaUser
+     */
+    public function setSecurityAns2($securityAns2)
+    {
+        $this->securityAns2 = $securityAns2;
+        return $this;
+    }
+
+    /**
+     * Get securityAns2
+     *
+     * @return string 
+     */
+    public function getSecurityAns2()
+    {
+        return $this->securityAns2;
+    }
+
+    /**
+     * Set createdDate
+     *
+     * @param datetime $createdDate
+     * @return GmaUser
+     */
+    public function setCreatedDate($createdDate)
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * Get createdDate
+     *
+     * @return datetime 
+     */
+    public function getCreatedDate()
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * Set isEmailVarified
+     *
+     * @param boolean $isEmailVarified
+     * @return GmaUser
+     */
+    public function setIsEmailVarified($isEmailVarified)
+    {
+        $this->isEmailVarified = $isEmailVarified;
+        return $this;
+    }
+
+    /**
+     * Get isEmailVarified
+     *
+     * @return boolean 
+     */
+    public function getIsEmailVarified()
+    {
+        return $this->isEmailVarified;
+    }
+
+    /**
+     * Set isReceiveMail
+     *
+     * @param boolean $isReceiveMail
+     * @return GmaUser
+     */
+    public function setIsReceiveMail($isReceiveMail)
+    {
+        $this->isReceiveMail = $isReceiveMail;
+        return $this;
+    }
+
+    /**
+     * Get isReceiveMail
+     *
+     * @return boolean 
+     */
+    public function getIsReceiveMail()
+    {
+        return $this->isReceiveMail;
+    }
+
+    /**
+     * Set isActive
+     *
+     * @param boolean $isActive
+     * @return GmaUser
+     */
+    public function setIsActive($isActive)
+    {
+        $this->isActive = $isActive;
+        return $this;
+    }
+
+    /**
+     * Get isActive
+     *
+     * @return boolean 
+     */
+    public function getIsActive()
+    {
+        return $this->isActive;
+    }
+
+    /**
+     * Set isAgreeTAndC
+     *
+     * @param boolean $isAgreeTAndC
+     * @return GmaUser
+     */
+    public function setIsAgreeTAndC($isAgreeTAndC)
+    {
+        $this->isAgreeTAndC = $isAgreeTAndC;
+        return $this;
+    }
+
+    /**
+     * Get isAgreeTAndC
+     *
+     * @return boolean 
+     */
+    public function getIsAgreeTAndC()
+    {
+        return $this->isAgreeTAndC;
+    }
+
+    /**
+     * Set isCompleteProfile
+     *
+     * @param boolean $isCompleteProfile
+     * @return GmaUser
+     */
+    public function setIsCompleteProfile($isCompleteProfile)
+    {
+        $this->isCompleteProfile = $isCompleteProfile;
+        return $this;
+    }
+
+    /**
+     * Get isCompleteProfile
+     *
+     * @return boolean 
+     */
+    public function getIsCompleteProfile()
+    {
+        return $this->isCompleteProfile;
+    }
+
+    /**
+     * Set dateOfBirth
+     *
+     * @param date $dateOfBirth
+     * @return GmaUser
+     */
+    public function setDateOfBirth($dateOfBirth)
+    {
+        $this->dateOfBirth = $dateOfBirth;
+        return $this;
+    }
+
+    /**
+     * Get dateOfBirth
+     *
+     * @return date 
+     */
+    public function getDateOfBirth()
+    {
+        return $this->dateOfBirth;
+    }
+}

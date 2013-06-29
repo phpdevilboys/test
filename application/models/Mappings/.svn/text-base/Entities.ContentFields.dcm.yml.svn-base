@@ -1,0 +1,46 @@
+Entities\ContentFields:
+  type: entity
+  table: content_fields
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    contentTypeId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: content_type_id
+    contentFieldTypeId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: content_field_type_id
+    label:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+    shortTag:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+      column: short_tag
+    required:
+      type: smallint
+      nullable: false
+    options:
+      type: text
+      nullable: true
+    settings:
+      type: text
+      nullable: true
+    sort:
+      type: integer
+      unsigned: false
+      nullable: true
+  lifecycleCallbacks: {  }

@@ -1,0 +1,75 @@
+first:
+    yodlee_account_id: 
+    contener_name: 
+    itemid: 
+    item_account_id: 
+    account_name: 
+    last_upadated: 
+    account_type: 
+    account_type_id: 
+    account_number: 
+    total_balance: 
+    account_holder: 
+    cash: 
+    money_market_balance: 
+    margin_balance: 
+    holding_type: 
+    ticker_symbol: 
+    quantity: 
+    price: 
+    value: 
+    cuisp: 
+    description: 
+    created_date: 
+    portfolio_id: 
+
+second:
+    yodlee_account_id: 
+    contener_name: 
+    itemid: 
+    item_account_id: 
+    account_name: 
+    last_upadated: 
+    account_type: 
+    account_type_id: 
+    account_number: 
+    total_balance: 
+    account_holder: 
+    cash: 
+    money_market_balance: 
+    margin_balance: 
+    holding_type: 
+    ticker_symbol: 
+    quantity: 
+    price: 
+    value: 
+    cuisp: 
+    description: 
+    created_date: 
+    portfolio_id: 
+
+third:
+    yodlee_account_id: 
+    contener_name: 
+    itemid: 
+    item_account_id: 
+    account_name: 
+    last_upadated: 
+    account_type: 
+    account_type_id: 
+    account_number: 
+    total_balance: 
+    account_holder: 
+    cash: 
+    money_market_balance: 
+    margin_balance: 
+    holding_type: 
+    ticker_symbol: 
+    quantity: 
+    price: 
+    value: 
+    cuisp: 
+    description: 
+    created_date: 
+    portfolio_id: 
+

@@ -1,4 +1,20 @@
 <?php
+function sanitize_output($buffer)
+{
+    $search = array(
+        '/\>[^\S ]+/s', //strip whitespaces after tags, except space
+        '/[^\S ]+\</s', //strip whitespaces before tags, except space
+        '/(\s)+/s'  // shorten multiple whitespace sequences
+        );
+    $replace = array(
+        '>',
+        '<',
+        '\\1'
+        );
+  $buffer = preg_replace($search, $replace, $buffer);
+    return $buffer;
+}
+//ob_start("sanitize_output");
 
 /*
  *---------------------------------------------------------------
@@ -75,6 +91,29 @@ if (defined('ENVIRONMENT'))
 	$application_folder = 'application';
 
 /*
+*--------------------------------------------------------------------------
+* Base URL
+*--------------------------------------------------------------------------
+*
+* Attemtps to figure the root web address
+*
+*/
+	if (isset($_SERVER['HTTP_HOST']))
+	{
+	    $base_url = isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on' ? 'https' : 'http';
+	    $base_url .= '://'. $_SERVER['HTTP_HOST'];
+	    $base_url .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+	}
+	else
+	{
+	    $base_url = 'http://localhost/GMA/Code/';
+	}
+
+	define('BASE_URL', $base_url);
+
+	unset($base_url);
+
+/*
  * --------------------------------------------------------------------
  * DEFAULT CONTROLLER
  * --------------------------------------------------------------------
@@ -121,6 +160,7 @@ if (defined('ENVIRONMENT'))
  *
  */
 	// $assign_to_config['name_of_config_item'] = 'value of config item';
+	$assign_to_config['global_tags']['lang'] = 'en';
 
 
 
@@ -190,6 +230,13 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
+	
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE DATAMAPPER BOOTSTRAP FILE
+ * -------------------------------------------------------------------- *
+ */
+require_once APPPATH.'third_party/datamapper/bootstrap.php';
 
 /*
  * --------------------------------------------------------------------

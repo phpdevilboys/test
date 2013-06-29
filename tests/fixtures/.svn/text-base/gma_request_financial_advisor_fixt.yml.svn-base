@@ -1,0 +1,33 @@
+first:
+    request_id: 
+    is_complete_by_advisor: 
+    is_response_by_advisor: 
+    advisor_feedback: 
+    advisor_comment: 
+    created_date: 
+    template_request_id: 
+    response_date: 
+    portfolio_id: 
+
+second:
+    request_id: 
+    is_complete_by_advisor: 
+    is_response_by_advisor: 
+    advisor_feedback: 
+    advisor_comment: 
+    created_date: 
+    template_request_id: 
+    response_date: 
+    portfolio_id: 
+
+third:
+    request_id: 
+    is_complete_by_advisor: 
+    is_response_by_advisor: 
+    advisor_feedback: 
+    advisor_comment: 
+    created_date: 
+    template_request_id: 
+    response_date: 
+    portfolio_id: 
+

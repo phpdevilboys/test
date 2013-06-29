@@ -1,0 +1,22 @@
+Entities\GmaUserAuthTemp:
+  type: entity
+  table: gma_user_auth_temp
+  fields:
+    userId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: user_id
+    authToken:
+      id: true
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+      column: auth_token
+    sentOn:
+      type: datetime
+      nullable: true
+      column: sent_on
+  lifecycleCallbacks: {  }

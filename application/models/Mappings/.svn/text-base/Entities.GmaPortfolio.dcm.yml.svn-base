@@ -1,0 +1,50 @@
+Entities\GmaPortfolio:
+  type: entity
+  table: gma_portfolio
+  fields:
+    portfolioId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: portfolio_id
+      generator:
+        strategy: SEQUENCE
+    portfolioName:
+      type: string
+      length: 200
+      fixed: false
+      nullable: false
+      column: portfolio_name
+    advisorDetailsId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: advisor_details_id
+    createdDate:
+      type: datetime
+      nullable: true
+      column: created_date
+    defaultAsset:
+      type: smallint
+      nullable: true
+      column: default_asset
+    portfolioTypeId:
+      type: smallint
+      nullable: true
+      column: portfolio_type_id
+    userDefineAsset:
+      type: smallint
+      nullable: true
+      column: user_define_asset
+  oneToOne:
+    user:
+      targetEntity: GmaUser
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        user_id:
+          referencedColumnName: user_id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

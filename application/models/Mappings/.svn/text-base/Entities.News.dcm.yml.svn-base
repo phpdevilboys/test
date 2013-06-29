@@ -1,0 +1,34 @@
+Entities\News:
+  type: entity
+  table: news
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    description:
+      type: text
+      nullable: true
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    newsDate:
+      type: date
+      nullable: true
+      column: news_date
+    newsImage:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: news_image
+  lifecycleCallbacks: {  }

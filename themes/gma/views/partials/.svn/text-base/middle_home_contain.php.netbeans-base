@@ -1,0 +1,14 @@
+<div class="innerdiv extrapadding3 width_283">
+	<h1>Latest News</h1>
+	{{ news:show_news order-by="created_at" limit="5" }}
+	<a href="<?php echo site_url('news'); ?>">Read More..</a> 	
+</div>							
+	<div class="innerdiv width_283 extrapadding3">
+		<h1>How It Videos</h1>
+	    <div class="dividertop"></div>
+	    <div class="content_txt">
+			{{ video:vimeo id="62365230" width="300" height="210" }}
+	    	<a href="<?php echo site_url('video'); ?>" class="mt16">More Videos</a> 
+		</div>
+	</div>				 
+<div class="clear"></div>

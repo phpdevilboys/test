@@ -1,0 +1,22 @@
+Entities\ContentTypesAdminGroups:
+  type: entity
+  table: content_types_admin_groups
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    contentTypeId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: content_type_id
+    groupId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: group_id
+  lifecycleCallbacks: {  }

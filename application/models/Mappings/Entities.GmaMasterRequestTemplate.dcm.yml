@@ -1,0 +1,40 @@
+Entities\GmaMasterRequestTemplate:
+  type: entity
+  table: gma_master_request_template
+  fields:
+    templateRequestId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: template_request_id
+      generator:
+        strategy: SEQUENCE
+    templateName:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: template_name
+    mailHeader:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: mail_header
+    mailBody:
+      type: text
+      nullable: true
+      column: mail_body
+    mailFrom:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: mail_from
+    status:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+  lifecycleCallbacks: {  }

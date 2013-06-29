@@ -1,0 +1,30 @@
+first:
+    advisor_details_id: 
+    financial_advisor_name: 
+    firm_name: 
+    financial_advisor_crdno: 
+    financial_advisor_emailid: 
+    financial_advisor_city: 
+    financial_advisor_state: 
+    portfolio_id: 
+
+second:
+    advisor_details_id: 
+    financial_advisor_name: 
+    firm_name: 
+    financial_advisor_crdno: 
+    financial_advisor_emailid: 
+    financial_advisor_city: 
+    financial_advisor_state: 
+    portfolio_id: 
+
+third:
+    advisor_details_id: 
+    financial_advisor_name: 
+    firm_name: 
+    financial_advisor_crdno: 
+    financial_advisor_emailid: 
+    financial_advisor_city: 
+    financial_advisor_state: 
+    portfolio_id: 
+

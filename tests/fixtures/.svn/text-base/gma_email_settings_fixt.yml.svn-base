@@ -1,0 +1,33 @@
+first:
+    id: 
+    host: 
+    username: 
+    password: 
+    support_email: 
+    contact_email: 
+    created_at: 
+    updated_at: 
+    protocol: 
+
+second:
+    id: 
+    host: 
+    username: 
+    password: 
+    support_email: 
+    contact_email: 
+    created_at: 
+    updated_at: 
+    protocol: 
+
+third:
+    id: 
+    host: 
+    username: 
+    password: 
+    support_email: 
+    contact_email: 
+    created_at: 
+    updated_at: 
+    protocol: 
+

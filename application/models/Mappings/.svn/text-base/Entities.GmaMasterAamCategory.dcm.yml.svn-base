@@ -1,0 +1,21 @@
+Entities\GmaMasterAamCategory:
+  type: entity
+  table: gma_master_aam_category
+  fields:
+    aamCatId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: aam_cat_id
+      generator:
+        strategy: SEQUENCE
+    category:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    description:
+      type: text
+      nullable: true
+  lifecycleCallbacks: {  }

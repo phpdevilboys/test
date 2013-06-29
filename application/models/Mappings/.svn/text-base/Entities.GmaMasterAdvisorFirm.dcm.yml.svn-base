@@ -1,0 +1,19 @@
+Entities\GmaMasterAdvisorFirm:
+  type: entity
+  table: gma_master_advisor_firm
+  fields:
+    firmId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: firm_id
+      generator:
+        strategy: SEQUENCE
+    firmName:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: firm_name
+  lifecycleCallbacks: {  }

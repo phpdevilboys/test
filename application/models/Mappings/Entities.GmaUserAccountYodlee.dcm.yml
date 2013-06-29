@@ -1,0 +1,128 @@
+Entities\GmaUserAccountYodlee:
+  type: entity
+  table: gma_user_account_yodlee
+  fields:
+    yodleeAccountId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: yodlee_account_id
+      generator:
+        strategy: SEQUENCE
+    contenerName:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: contener_name
+    itemid:
+      type: integer
+      unsigned: false
+      nullable: true
+    itemAccountId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: item_account_id
+    accountName:
+      type: string
+      length: 250
+      fixed: false
+      nullable: true
+      column: account_name
+    lastUpadated:
+      type: datetime
+      nullable: true
+      column: last_upadated
+    accountType:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: account_type
+    accountTypeId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: account_type_id
+    accountNumber:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: account_number
+    totalBalance:
+      type: float
+      nullable: true
+      column: total_balance
+    accountHolder:
+      type: string
+      length: 100
+      fixed: false
+      nullable: true
+      column: account_holder
+    cash:
+      type: string
+      length: 75
+      fixed: false
+      nullable: true
+    moneyMarketBalance:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: money_market_balance
+    marginBalance:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: margin_balance
+    holdingType:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: holding_type
+    tickerSymbol:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: ticker_symbol
+    quantity:
+      type: integer
+      unsigned: false
+      nullable: true
+    price:
+      type: float
+      nullable: true
+    value:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+    cuisp:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+    description:
+      type: text
+      nullable: true
+    createdDate:
+      type: date
+      nullable: true
+      column: created_date
+  oneToOne:
+    portfolio:
+      targetEntity: GmaPortfolio
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        portfolio_id:
+          referencedColumnName: portfolio_id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

@@ -1,0 +1,51 @@
+first:
+    id: 
+    type: 
+    entry_id: 
+    title: 
+    url: 
+    tag_id: 
+    class: 
+    target: 
+    parent_id: 
+    navigation_id: 
+    subnav_visibility: 
+    hide: 
+    disable_current: 
+    disable_current_trail: 
+    sort: 
+
+second:
+    id: 
+    type: 
+    entry_id: 
+    title: 
+    url: 
+    tag_id: 
+    class: 
+    target: 
+    parent_id: 
+    navigation_id: 
+    subnav_visibility: 
+    hide: 
+    disable_current: 
+    disable_current_trail: 
+    sort: 
+
+third:
+    id: 
+    type: 
+    entry_id: 
+    title: 
+    url: 
+    tag_id: 
+    class: 
+    target: 
+    parent_id: 
+    navigation_id: 
+    subnav_visibility: 
+    hide: 
+    disable_current: 
+    disable_current_trail: 
+    sort: 
+

@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Grade My Advisor</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/styles_popup.css" />
+<!--[if IE 6]><script type="text/javascript" src="DD_belatedPNG_0.0.8a-min.js"></script>
+        <script type="text/javascript">DD_belatedPNG.fix("img, div, a, input, textarea");</script>
+        <![endif]-->
+<style></style>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.custom_radio_checkbox.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+            $(document).ready(function(){
+                $(".radio").dgStyle();
+                $(".checkbox").dgStyle();
+            });
+        </script>
+<script src="js/jquery.reveal.js"></script>
+<script type="text/javascript">
+            $(document).ready(function() {
+                $('#button').click(function(e) { // Button which will activate our modal
+                    $('#modal').reveal({ // The item which will be opened with reveal
+                        animation: 'fade',                   // fade, fadeAndPop, none
+                        animationspeed: 600,                       // how fast animtions are
+                        closeonbackgroundclick: true,              // if you click background will modal close?
+                        dismissmodalclass: 'close'    // the class of a button or element that will close an open modal
+                    });
+                    return false;
+                });
+            });
+        </script>
+<script type="text/javascript">
+            window.onload = function() {
+                if(document.getElementById('loginboxinput')) {
+                    var li = document.getElementById('loginboxinput').getElementsByTagName('input');
+                    for(i=0;i<li.length;i++) {
+                        li[i].onmouseover = function() {this.className = 'newtestover';}
+                        li[i].onmouseout = function() {this.className = this.className.replace(/newtestover/,'newtest');}
+                    }
+                }
+                if(document.getElementById('loginboxinput2')) {
+                    var li2 = document.getElementById('loginboxinput2').getElementsByTagName('input');
+                    for(i=0;i<li2.length;i++) {
+                        li2[i].onmouseover = function() {this.className = 'newtestover';}
+                        li2[i].onmouseout = function() {this.className = this.className.replace(/newtestover/,'newtest');}
+                    }
+                }
+                if(document.getElementById('logininput3')) {
+                    var li3 = document.getElementById('logininput3').getElementsByTagName('input');
+                    for(i=0;i<li3.length;i++) {
+                        li3[i].onmouseover = function() {this.className = 'bigbtnover';}
+                        li3[i].onmouseout = function() {this.className = this.className.replace(/bigbtnover/,'bigbtn');}
+                    }
+                }
+            }
+
+            function defblank(obj,vlu)
+            {
+                if (document.getElementById(obj).value==vlu)
+                { document.getElementById(obj).value="";}
+            }
+        </script>
+<script type="text/javascript">
+            $(document).ready(function(){	
+                if (!$.browser.opera) {
+                    // select element styling
+                    $('select.select_1').each(function(){
+                        var title = $(this).attr('title');
+                        if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+                        $(this)
+                        .css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+                        .after('<span class="iselect2">' + title + '</span>')
+                        .change(function(){
+                            val = $('option:selected',this).text();
+                            $(this).next().text(val);
+                        })
+                    });
+
+                };
+		
+            });
+        </script>
+<script type="text/javascript">
+            $(document).ready(function(){	
+
+                if (!$.browser.opera) {
+    
+                    // select element styling
+                    $('select.select').each(function(){
+                        var title = $(this).attr('title');
+                        if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+                        $(this)
+                        .css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+                        .after('<span class="iselect">' + title + '</span>')
+                        .change(function(){
+                            val = $('option:selected',this).text();
+                            $(this).next().text(val);
+                        })
+                    });
+
+                };
+		
+            });
+	
+            function mousedown_tds_button_gery(obj){
+                obj.style.backgroundPosition ='0px -76px';
+                obj.firstChild.style.backgroundPosition ='right -76px';
+            }
+            function mouseup_tds_button_gery(obj){
+                obj.style.backgroundPosition ='0px 0px';
+                obj.firstChild.style.backgroundPosition ='right 0px';
+            }
+            function mousedown_tds_button_greenb(obj){
+                obj.style.backgroundPosition ='0px -105px';
+                obj.firstChild.style.backgroundPosition ='right -105px';
+            }
+            function mouseup_tds_button_greenb(obj){
+                obj.style.backgroundPosition ='0px 0px';
+                obj.firstChild.style.backgroundPosition ='right 0px';
+            }
+        </script>
+<script src="js/jquery.placeholder.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="shadow">
+    <div id="header">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Grade My Advisor Logo" width="174" height="117" border="0" /></a></div>
+      <!-- MENU START HERE -->
+      <div id="navigation">
+        <div class="navleft">
+          <div class="home" ><a  href="index.html">Home</a></div>
+          <div class="genral"><a href="aboutus.html">About</a></div>
+          <div class="genral"><a href="illustration.html">Illustration</a></div>
+          <div class="genral"><a href="howitworks.html">How it Works</a></div>
+          <div class="genral"><a href="testimonials.html">Testimonials</a></div>
+          <div class="genrallast"><a href="contactus.html">Contact Us</a></div>
+          <!--<div class="genral2"><span class="Fright mr20 img_alin">Follow Us : <a href="#"> <img src="images/facebook.png" alt="facebook"  class="mr6"/></a> <a href="#"><img src="images/twitter.png" alt="twitter" /></a> </span></div>-->
+          <div class="clear"></div>
+        </div>
+        <!--    <div class="navright"></div>-->
+        <div class="clear"></div>
+      </div>
+      <!-- MENU END HERE -->
+      <div class="loginbox mt12">
+        <!-- INPUT BOX START HERE-->
+        <span class="loginInput3" id="loginboxinput">
+        <input name="" type="button" class="newtest" onclick="MM_goToURL('parent','index.html');return document.MM_returnValue" value="Logout"/>
+        </span>
+        <!-- input box close here -->
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="pt45"> </div>
+    <div ><img src="images/aboutusbanner.png" /></div>
+    <!--CONTENT START HERE-->
+    <div id="main_content">
+      <div class="specer20"></div>
+      <div class="inner_content">
+        <div class="dividermiddle_C">
+          <div class="dividertop_C">
+            <div class="dividerbottom_C">
+              <div class="content_txt">
+                <div class="Fleft width439px mr28">
+                  <h1 class="topheading">Asset Allocation Model
+                    <div class="headding_subtext">(Please enter data from your asset allocation before you enter data from your statments)</div>
+                  </h1>
+                  <div class="specer"></div>
+                  <div class="space"></div>
+                  <div> </div>
+                  <div class="pt20">
+                    <div id="account1" class="radio" >
+                      <input type="radio" checked="checked" value="" name="account" id="account" />
+                    </div>
+                    <div class=""><span >[Start: 03/2012]</span><span class="ml10">[End: 06/2012]</span> <span class="Fright"><a href="asset_allocation_model.html"><img width="20" border="0" height="20" class="edit_icon" title="Edit" alt="Edit" src="images/edit_icon.png"></a></span> </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="pt20">
+                    <div id="account2" class="radio">
+                      <input type="radio" value="" name="account" id="account" />
+                    </div>
+                    <div><span>[Start Date: 04/2010]</span><span class="ml10">[End Date: 12/2011]</span> <span class="Fright"><a href="asset_allocation_model.html"><img width="20" border="0" height="20" class="edit_icon" title="Edit"  alt="Edit" src="images/edit_icon.png"></a></span> </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="pt20">
+                    <div id="account3" class="radio">
+                      <input type="radio" value="" name="account" id="account" />
+                    </div>
+                    <div><span >[Start: 07/2019]</span><span class="ml10">[End: 10/2010]</span> <span class="Fright"><a href="asset_allocation_model.html"><img width="20" border="0" height="20" class="edit_icon" title="Edit"  alt="Edit" src="images/edit_icon.png"></a></span></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="pt20">
+                    <div id="account4" class="radio">
+                      <input type="radio" value="" name="account" id="account" />
+                    </div>
+                    <div><span>[Start: 02/2011]</span><span class="ml10">[End: 08/2011]</span> <span class="Fright"><a href="asset_allocation_model.html"><img width="20" border="0" height="20" class="edit_icon" title="Edit"  alt="Edit" src="images/edit_icon.png"></a></span></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="spacer20"></div>
+                  <div class="spacer20"></div>
+                  <div class="account_data">
+                    <div class="pie_div ref_1">
+                      <div class="chart_txt ml10">Historical : Start Date End Date</div>
+                      <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+                      <div class="specer20"></div>
+                      <img src="images/manuall_chart.png" /> 
+                    </div>
+                    <div class="pie_div ref_2">
+                      <div class="chart_txt ml10">Historical : Start Date End Date</div>
+                      <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+                      <div class="specer20"></div>
+                      <img src="images/manuall_chart_1.png" /> </div>
+                    <div class="pie_div ref_3">
+                      <div class="chart_txt ml10">Historical : Start Date End Date</div>
+                      <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+                      <div class="specer20"></div>
+                      <img src="images/manuall_chart.png" /> </div>
+                    <div class="pie_div ref_4">
+                      <div class="chart_txt ml10">Historical : Start Date End Date</div>
+                      <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+                      <div class="specer20"></div>
+                      <img src="images/manuall_chart_1.png" /> </div>
+                  </div>
+             
+             
+                  <div class="account_data_1">
+					  <div class="pie_div ref_5">
+						  <div class="chart_txt ml10">Historical : Start Date End Date</div>
+						  <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+						  <div class="specer20"></div>
+						  <img src="images/graph_big.png" /> 
+                     </div>
+                      <div class="pie_div ref_6">
+						  <div class="chart_txt ml10">Historical : Start Date End Date</div>
+						  <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+						  <div class="specer20"></div>
+						  <img src="images/graph01_big.png" /> 
+                     </div>
+                      <div class="pie_div ref_7">
+						  <div class="chart_txt ml10">Historical : Start Date End Date</div>
+						  <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+						  <div class="specer20"></div>
+						  <img src="images/graph_big.png" /> 
+                     </div>
+                      <div class="pie_div ref_8">
+						  <div class="chart_txt ml10">Historical : Start Date End Date</div>
+						  <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+						  <div class="specer20"></div>
+						  <img src="images/graph01_big.png" /> 
+                     </div>
+                      <div class="pie_div ref_9">
+						  <div class="chart_txt ml10">Historical : Start Date End Date</div>
+						  <div class="chart_txt ml10">Current Entry: Start Date End Date or Undefined</div>
+						  <div class="specer20"></div>
+						  <img src="images/graph_big.png" /> 
+                     </div>
+                  </div>
+                  
+                  
+                  
+                </div>
+              </div>
+              <div class="Fleft width439px">
+                <div class="highlitedlink"></div>
+                <div class="highlitedtxt">My Asset Allocation Model <span class="highlitedlink"> <a href="#" class="font_size11" id="button"> What is an Asset Allocation  Model?</a></span></div>
+                <div  class="spacer11"></div>
+                <div class="pt10">
+                  <div class="radio"  id="manual_form_radio">
+                    <input type="radio"  name="RFID23" value="2" checked="checked" id="own_aam"/>
+                  </div>
+                  Enter My Asset Allocation Model (Recommended)
+                  <div class="clear"></div>
+                </div>
+                <div class="pt10">
+                  <div class="radio" id="defualt_form_radio">
+                    <input type="radio"  name="RFID23" value="1" id="default_aam"/>
+                  </div>
+                  Use Default Asset Allocation Model
+                  <div class="clear"></div>
+                </div>
+                <div  class="spacer20"></div>
+                <span class="startdate">Start Date</span>
+                <div class="midium_txtbox2div_m float_left1">
+                  <input name="username2" type="text" value="" class="contactname" id="datebox" onFocus="defblank(this.id,'Date')" onBlur="defblank(this.id,'Date')"/>
+                </div>
+                <div class="date_picker_m"><img src="images/date_picker.png"/></div>
+                <span class="enddate"> End Date</span>
+                <div class="midium_txtbox2div_m float_left1">
+                  <input name="username2" type="text" value="" class="contactname" id="datebox" onFocus="defblank(this.id,'Date')" onBlur="defblank(this.id,'Date')"/>
+                </div>
+                <div class="date_picker_m"><img src="images/date_picker.png"/></div>
+                <div class="clear"> </div>
+               
+                <div class="form_new defualt_form" style="display:none">
+                  <div class="highlitedtxt">Asset  Default Models</div>
+                  <div  class="specer20"></div>
+                  <div>These are default models for clients who dont’s have a formal asset allocation with their financial advisor.</div>
+                  <div style="height:230px;">
+                    <div class="pt10 width_200 Fleft" style="height:210px">
+                      <div class="pt10">
+                        <div class="radio" id="RFID1" style="background-position: center 0px;">
+                          <input type="radio" id="RFID" name="RFID" value="2">
+                        </div>
+                        <div></div>
+                        <span id="RFID1_txt">Conservative</span>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="pt10">
+                        <div class="radio" id="RFID2" style="background-position: center 0px;">
+                          <input type="radio" id="RFID" name="RFID" value="3" checked="checked" />
+                        </div>
+                        <span id="RFID2_txt">Moderately Conservative</span>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="pt10 ">
+                        <div class="radio" id="RFID3" style="background-position: center 0px;">
+                          <input type="radio" id="RFID" name="RFID" value="4">
+                        </div>
+                        <span id="RFID3_txt">Moderate</span>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="pt10">
+                        <div class="radio" id="RFID4" style="background-position: center 0px;">
+                          <input type="radio" id="RFID" name="RFID" value="5">
+                        </div>
+                        <span id="RFID4_txt">Moderately Aggressive</span>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="pt10">
+                        <div class="radio" id="RFID5" style="background-position: center 0px;">
+                          <input type="radio" id="RFID" name="RFID" value="6">
+                        </div>
+                        <span id="RFID5_txt">Aggressive</span>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="pt10 width_230 Fleft">
+                      <div class="form_new defualt_form">
+                        <div  class="desc chart1">
+                          <div class='piethumb_div'> <img src='images/graph_thumb.png' />
+                            <div class='highlitedtxt ml10'>Annual Returns</div>
+                            <table width='208' border='0'>
+                              <tr class='annu_retur_head'>
+                                <td>5 Years</td>
+                                <td>3 Years</td>
+                                <td>1 Years</td>
+                              </tr>
+                              <tr class='annu_retur_row'>
+                                <td>1.52564%</td>
+                                <td>2.56968%</td>
+                                <td>1.856%</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                        <div  class="desc chart2">
+                          <div class='piethumb_div'> <img src='images/graph_thumb01.png' />
+                            <div class='highlitedtxt ml10'>Annual Returns</div>
+                            <table width='208' border='0'>
+                              <tr class='annu_retur_head'>
+                                <td>5 Years</td>
+                                <td>3 Years</td>
+                                <td>1 Years</td>
+                              </tr>
+                              <tr class='annu_retur_row'>
+                                <td>1.52564%</td>
+                                <td>2.56968%</td>
+                                <td>1.856%</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                        <div  class="desc chart3">
+                          <div class='piethumb_div'> <img src='images/graph_thumb.png' />
+                            <div class='highlitedtxt ml10'>Annual Returns</div>
+                            <table width='208' border='0'>
+                              <tr class='annu_retur_head'>
+                                <td>5 Years</td>
+                                <td>3 Years</td>
+                                <td>1 Years</td>
+                              </tr>
+                              <tr class='annu_retur_row'>
+                                <td>1.52564%</td>
+                                <td>2.56968%</td>
+                                <td>1.856%</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="desc chart4">
+                          <div class='piethumb_div'><img src='images/graph_thumb01.png' />
+                            <div class='highlitedtxt ml10'>Annual Returns</div>
+                            <table width='208' border='0'>
+                              <tr class='annu_retur_head'>
+                                <td>5 Years</td>
+                                <td>3 Years</td>
+                                <td>1 Years</td>
+                              </tr>
+                              <tr class='annu_retur_row'>
+                                <td>1.52564%</td>
+                                <td>2.56968%</td>
+                                <td>1.856%</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="desc chart5">
+                          <div class='piethumb_div'> <img src='images/graph_thumb.png' />
+                            <div class='highlitedtxt ml10'>Annual Returns</div>
+                            <table width='208' border='0'>
+                              <tr class='annu_retur_head'>
+                                <td>5 Years</td>
+                                <td>3 Years</td>
+                                <td>1 Years</td>
+                              </tr>
+                              <tr class='annu_retur_row'>
+                                <td>1.52564%</td>
+                                <td>2.56968%</td>
+                                <td>1.856%</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="specer20"></div>
+                    <div class="tds-button_greenb"> <a onmouseup="mouseup_tds_button_greenb(this)" onmousedown="mousedown_tds_button_greenb(this)" class="margin_right" href="#"><span>Submit</span></a> </div>
+                  <div class="tds-button_blue" style="float:right;"> <a onmouseup="mouseup_tds_button_greenb(this)" onmousedown="mousedown_tds_button_greenb(this)" class="margin_right" href="data_entry.html"><span>Next Stage</span></a> </div>
+                  <div class="clear"></div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              
+              
+              
+              
+                <div class="form_new manual_form">
+                  <div class="specer20"></div>
+                  <span>Percentage</span>
+                  <div class="contactname_sml_img2 floatleft">
+                    <input type="text" onblur="defblank(this.id,'MI')" onfocus="defblank(this.id,'MI')" id="MI" class="contactname" value="" name="username2" />
+                  </div>
+                  <span>%</span> <span class="dropspan"> Asset Class</span>
+                  <div class="dropdowndiv_1">
+                    <select title="Select one" class="select_1" style="z-index: 10; opacity: 0;">
+                      <option class="selected"></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                  <span>Percentage</span>
+                  <div class="contactname_sml_img2 floatleft">
+                    <input type="text" onblur="defblank(this.id,'MI')" onfocus="defblank(this.id,'MI')" id="MI" class="contactname" value="" name="username2">
+                  </div>
+                  <span>%</span> <span class="dropspan"> Asset Class</span>
+                  <div class="dropdowndiv_1">
+                    <select title="Select one" class="select_1" style="z-index: 10; opacity: 0;">
+                      <option class="selected"> </option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                  <span>Percentage</span>
+                  <div class="contactname_sml_img2 floatleft">
+                    <input type="text" onblur="defblank(this.id,'MI')" onfocus="defblank(this.id,'MI')" id="MI" class="contactname" value="" name="username2">
+                  </div>
+                  <span>%</span> <span class="dropspan"> Asset Class</span>
+                  <div class="dropdowndiv_1">
+                    <select title="Select one" class="select_1" style="z-index: 10; opacity: 0;">
+                      <option class="selected"> </option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                  <span>Percentage</span>
+                  <div class="contactname_sml_img2 floatleft">
+                    <input type="text" onblur="defblank(this.id,'MI')" onfocus="defblank(this.id,'MI')" id="MI" class="contactname" value="" name="username2">
+                  </div>
+                  <span>%</span> <span class="dropspan"> Asset Class</span>
+                  <div class="dropdowndiv_1">
+                    <select title="Select one" class="select_1" style="z-index: 10; opacity: 0;">
+                      <option class="selected"> </option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                  <span>Percentage</span>
+                  <div class="contactname_sml_img2 floatleft">
+                    <input type="text" onblur="defblank(this.id,'MI')" onfocus="defblank(this.id,'MI')" id="MI" class="contactname" value="" name="username2">
+                  </div>
+                  <span>%</span> <span class="dropspan"> Asset Class</span>
+                  <div class="dropdowndiv_1">
+                    <select title="Select one" class="select_1" style="z-index: 10; opacity: 0;">
+                      <option class="selected"> </option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="greebtncontaine">
+                    <div class="tds-button_grey Fright margin_minus"> <a onmousedown="mousedown_tds_button_gery(this)" onmouseup="mouseup_tds_button_gery(this)"><span>Add Additional Asset Class</span></a> </div>
+                  </div>
+                  <div class="clear"></div>
+                  <span class="spanfont">Total</span>
+                  <div class="contactname_sml_img2 floatleft">
+                    <input type="text" name="username2" value="100" class="contactname" id="MI" onfocus="defblank(this.id,'MI')" onblur="defblank(this.id,'MI')">
+                  </div>
+                  <span> % </span>
+                  <div class="clear"></div>
+                  <div id="RFID" class="checkbox checkbox_n" style="background-position: center 0px;">
+                    <input type="checkbox" value="" name="hobbies[]" id="RFID">
+                  </div>
+                  <label class="labelwidth"> I want my financial Advisor to complate this step.  Send  me the email to notify my financial Advisor</label>
+                  <div class="clear"></div>
+                  <div class="specer20"></div>
+                  <div class="tds-button_greenb"> <a onmouseup="mouseup_tds_button_greenb(this)" onmousedown="mousedown_tds_button_greenb(this)" class="margin_right" href="#"><span>Submit</span></a> </div>
+                  <div class="tds-button_blue" style="float:right;"> <a onmouseup="mouseup_tds_button_greenb(this)" onmousedown="mousedown_tds_button_greenb(this)" class="margin_right" href="data_entry.html"><span>Next Stage</span></a> </div>
+                  <div class="clear"></div>
+                </div>
+              
+              
+                <div class="clear"></div>
+                <div class="specer15"></div>
+                <!--  <div class="highlitedlink"><a href="asset_allocation_model_list.html">List of Asset Allocation Model</a></div>-->
+              </div>
+              <!-- /Fleft width439px -->
+              <div class="clear"></div>
+              <div class="specer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="specer30"></div>
+    </div>
+    <!--CONTENT END HERE-->
+    <div class="mainfooter">
+      <div id="footer"> <span class="footerg"><a href="terms.html">Terms and Conditions</a></span> | <span class="footerg"><a href="privacypolicy.html">Privacy Policy</a></span> | <span class="footerg"><a href="faq.html">FAQ</a></span> | <span class="footerg"><a href="contactus.html">Contact Us</a></span> <span class="Fright socallink"><a href="3"><img src="images/print.png" /></a><a href="#"><img src="images/email.png" /> </a><a href="#"><img src="images/facebook.png" /></a> <a href="#"><img src="images/twitter.png" /></a> </span>
+        <div class="clear"></div>
+        <div class="specer30"></div>
+      </div>
+      <div id="footer">
+        <div class="inner_content2">EvaluateMyAdvisor.com, or its employees, have no &quot;quid pro quo&quot; with any financial firm or financial professional. We receive no revenue from any entity other 
+          than you, our client.
+          <div class="clear"></div>
+        </div>
+        <p style="margin-top:10px; width:400px; float:left">© Copyright GradeMyAdvisor.com, All rights reserved.</p>
+        <span class="Fright"><img src="images/safe_secure_logos.png" /> </span>
+        <div class="clear"></div>
+      </div>
+      <!--<div class="footline"> </div>-->
+      <div class="footline"> </div>
+    </div>
+  </div>
+</div>
+<div id="modal">
+  <div id="heading"> What is an Asset Allocation Model </div>
+  <div id="content">
+    <div class="paragraph">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <!--<a href="vedio.html" class="button green close" style="width:auto;">I Agree</a>
+                <a href="#" class="button red close">Decline</a>-->
+    <div class="tds-button_greenb ml15"> <a onmouseup="mouseup_tds_button_greenb(this)" onmousedown="mousedown_tds_button_greenb(this)" class="margin_right close" style="cursor:pointer"><span>Close</span></a> </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<script language="javascript" type="text/javascript">
+            $(document).ready(function(){
+				
+                $("div.desc").hide();
+                
+                $("#RFID1_txt").hover(function(){
+				  $(".chart1").show();	
+				},function(){
+				 $(".chart1").hide();
+				});
+				
+				$("#RFID2_txt").hover(function(){
+				  $(".chart2").show();	
+				},function(){
+				 $(".chart2").hide();
+				});
+				
+				$("#RFID3_txt").hover(function(){
+				  $(".chart3").show();	
+				},function(){
+				 $(".chart3").hide();
+				});
+				
+				$("#RFID4_txt").hover(function(){
+				  $(".chart4").show();	
+				},function(){
+				 $(".chart4").hide();
+				});
+				
+				$("#RFID5_txt").hover(function(){
+				  $(".chart5").show();	
+				},function(){
+				 $(".chart5").hide();
+				});
+         
+                $("#manual_form_radio").click(function(){
+                    $("div.form_new").hide();
+                    $(".manual_form").show();	
+                });
+                $("#defualt_form_radio").click(function(){
+                    $("div.form_new").hide();
+                    $(".defualt_form").show();								  
+                });
+                
+                if($('#own_aam').is(':checked')) { 
+					$("div.form_new").hide();
+                    $(".manual_form").show(); 
+                 }
+				if($('#default_aam').is(':checked')) { 
+				  $("div.form_new").hide();
+                  $(".defualt_form").show();	
+				 }
+               
+                //account reference from left
+                $("div.pie_div").hide();
+                $("#account1").click(function(){ 
+                    $("div.pie_div").hide();
+                    $(".ref_1").show();
+                });
+                $("#account2").click(function(){
+                    $("div.pie_div").hide();
+                    $(".ref_2").show();
+                });
+                $("#account3").click(function(){
+                    $("div.pie_div").hide();
+                    $(".ref_3").show();
+                });
+                $("#account4").click(function(){
+                    $("div.pie_div").hide();
+                    $(".ref_4").show();
+                });
+                
+                //account reference from right
+                $("div.pie_div").hide();
+                $("#RFID1").click(function(){
+                    $("div.pie_div").hide();
+                    $(".ref_5").show();
+                });
+                $("#RFID2").click(function(){
+                    $("div.pie_div").hide();
+                    $(".ref_6").show();
+                });
+                $("#RFID3").click(function(){
+                    $("div.pie_div").hide();
+                    $(".ref_7").show();
+                });
+                $("#RFID4").click(function(){
+                    $("div.pie_div").hide();
+                    $(".ref_8").show();
+                });
+                $("#RFID5").click(function(){
+                    $("div.pie_div").hide();
+                    $(".ref_9").show();
+                });
+                
+            });
+        </script>
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<script type="text/javascript" src="js/jquery.tooltipster.js"></script>
+<script>
+            $(document).ready(function() {
+                $('.tooltip').tooltipster();
+            });
+        </script>
+</body>
+</html>

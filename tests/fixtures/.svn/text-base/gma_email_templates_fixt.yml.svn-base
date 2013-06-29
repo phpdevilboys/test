@@ -1,0 +1,33 @@
+first:
+    id: 
+    title: 
+    subject: 
+    body: 
+    created_date: 
+    updated_date: 
+    module: 
+    add_sign: 
+    is_default: 
+
+second:
+    id: 
+    title: 
+    subject: 
+    body: 
+    created_date: 
+    updated_date: 
+    module: 
+    add_sign: 
+    is_default: 
+
+third:
+    id: 
+    title: 
+    subject: 
+    body: 
+    created_date: 
+    updated_date: 
+    module: 
+    add_sign: 
+    is_default: 
+

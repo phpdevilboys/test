@@ -1,0 +1,42 @@
+first:
+    user_transaction_id: 
+    billing_address: 
+    postal_code: 
+    location: 
+    state: 
+    phone_no: 
+    gma_transaction_id: 
+    gma_merchant_id: 
+    created_date: 
+    payment_response_status: 
+    payment_status: 
+    portfolio_id: 
+
+second:
+    user_transaction_id: 
+    billing_address: 
+    postal_code: 
+    location: 
+    state: 
+    phone_no: 
+    gma_transaction_id: 
+    gma_merchant_id: 
+    created_date: 
+    payment_response_status: 
+    payment_status: 
+    portfolio_id: 
+
+third:
+    user_transaction_id: 
+    billing_address: 
+    postal_code: 
+    location: 
+    state: 
+    phone_no: 
+    gma_transaction_id: 
+    gma_merchant_id: 
+    created_date: 
+    payment_response_status: 
+    payment_status: 
+    portfolio_id: 
+

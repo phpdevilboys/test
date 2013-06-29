@@ -1,0 +1,35 @@
+Entities\GmaDefaultAssetAllocation:
+  type: entity
+  table: gma_default_asset_allocation
+  fields:
+    defaultAssetAllocationId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: default_asset_allocation_id
+      generator:
+        strategy: SEQUENCE
+    startDate:
+      type: date
+      nullable: true
+      column: start_date
+    endDate:
+      type: date
+      nullable: true
+      column: end_date
+    aamCatId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: aam_cat_id
+    createdDate:
+      type: date
+      nullable: true
+      column: created_date
+    portfolioId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: portfolio_id
+  lifecycleCallbacks: {  }

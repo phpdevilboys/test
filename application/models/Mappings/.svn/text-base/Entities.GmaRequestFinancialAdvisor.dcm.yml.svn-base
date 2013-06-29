@@ -1,0 +1,53 @@
+Entities\GmaRequestFinancialAdvisor:
+  type: entity
+  table: gma_request_financial_advisor
+  fields:
+    requestId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: request_id
+      generator:
+        strategy: SEQUENCE
+    isCompleteByAdvisor:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: is_complete_by_advisor
+    isResponseByAdvisor:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: is_response_by_advisor
+    advisorFeedback:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: advisor_feedback
+    advisorComment:
+      type: text
+      nullable: false
+      column: advisor_comment
+    createdDate:
+      type: datetime
+      nullable: false
+      column: created_date
+    templateRequestId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: template_request_id
+    responseDate:
+      type: datetime
+      nullable: false
+      column: response_date
+    portfolioId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: portfolio_id
+  lifecycleCallbacks: {  }

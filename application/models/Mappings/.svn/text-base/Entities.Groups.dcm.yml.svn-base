@@ -1,0 +1,32 @@
+Entities\Groups:
+  type: entity
+  table: groups
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    name:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+    type:
+      type: string
+      length: 15
+      fixed: false
+      nullable: false
+    permissions:
+      type: text
+      nullable: true
+    required:
+      type: smallint
+      nullable: false
+    modifiablePermissions:
+      type: smallint
+      nullable: false
+      column: modifiable_permissions
+  lifecycleCallbacks: {  }

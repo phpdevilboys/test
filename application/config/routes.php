@@ -38,9 +38,31 @@
 |
 */
 
-$route['default_controller'] = "welcome";
-$route['404_override'] = '';
+// Redirect to the installer if the installed config item is set to false or is missing
+if ( ! config_item('installed'))
+{
+    if (file_exists(CMS_ROOT . 'install'))
+    {
+        header('Location: http://localhost/cms-canvas-1.0.1/install/index.php');
+    }
+    else
+    {
+        echo "Could not find install directory.";
+    }
+    exit;
+}
 
+$route['default_controller'] = "content/pages";
+$route['404_override'] = 'content/pages';
+
+$route[ADMIN_PATH] = "dashboard/admin/dashboard";
+$route[ADMIN_PATH . '/([a-zA-Z_-]+)/(:any)'] = "$1/admin/$2";
+$route[ADMIN_PATH . '/([a-zA-Z_-]+)'] = "$1/admin/$1";
+
+
+// Special Case Routes
+$route[ADMIN_PATH . '/users/login'] = "users/login";
+$route[ADMIN_PATH . '/users/forgot-password'] = "users/forgot-password";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

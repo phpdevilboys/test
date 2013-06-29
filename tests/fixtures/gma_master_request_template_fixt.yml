@@ -1,0 +1,24 @@
+first:
+    template_request_id: 
+    template_name: 
+    mail_header: 
+    mail_body: 
+    mail_from: 
+    status: 
+
+second:
+    template_request_id: 
+    template_name: 
+    mail_header: 
+    mail_body: 
+    mail_from: 
+    status: 
+
+third:
+    template_request_id: 
+    template_name: 
+    mail_header: 
+    mail_body: 
+    mail_from: 
+    status: 
+

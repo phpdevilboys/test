@@ -1,0 +1,31 @@
+Entities\GmaCashFlow:
+  type: entity
+  table: gma_cash_flow
+  fields:
+    cashFlowId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: cash_flow_id
+      generator:
+        strategy: SEQUENCE
+    cashFlowDate:
+      type: datetime
+      nullable: false
+      column: cash_flow_date
+    cashFlowType:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: cash_flow_type
+    amount:
+      type: float
+      nullable: false
+    portfolioId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: portfolio_id
+  lifecycleCallbacks: {  }

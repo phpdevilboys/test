@@ -1,0 +1,30 @@
+first:
+    portfolio_id: 
+    portfolio_name: 
+    advisor_details_id: 
+    created_date: 
+    user_id: 
+    default_asset: 
+    portfolio_type_id: 
+    user_define_asset: 
+
+second:
+    portfolio_id: 
+    portfolio_name: 
+    advisor_details_id: 
+    created_date: 
+    user_id: 
+    default_asset: 
+    portfolio_type_id: 
+    user_define_asset: 
+
+third:
+    portfolio_id: 
+    portfolio_name: 
+    advisor_details_id: 
+    created_date: 
+    user_id: 
+    default_asset: 
+    portfolio_type_id: 
+    user_define_asset: 
+

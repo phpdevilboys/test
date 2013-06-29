@@ -1,0 +1,65 @@
+Entities\Categories:
+  type: entity
+  table: categories
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    categoryGroupId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: category_group_id
+    parentId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: parent_id
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    urlTitle:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: url_title
+    description:
+      type: text
+      nullable: true
+    tagId:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+      column: tag_id
+    class:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    target:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+    subcategoriesVisibility:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: subcategories_visibility
+    hide:
+      type: smallint
+      nullable: false
+    sort:
+      type: integer
+      unsigned: false
+      nullable: false
+  lifecycleCallbacks: {  }

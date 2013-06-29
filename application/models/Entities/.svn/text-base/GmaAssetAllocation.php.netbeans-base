@@ -1,0 +1,151 @@
+<?php
+
+namespace Entities;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Entities\GmaAssetAllocation
+ *
+ * @ORM\Table(name="gma_asset_allocation")
+ * @ORM\Entity
+ */
+class GmaAssetAllocation
+{
+    /**
+     * @var integer $assetAllocationId
+     *
+     * @ORM\Column(name="asset_allocation_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="gma_asset_allocation_asset_allocation_id_seq", allocationSize="1", initialValue="1")
+     */
+    private $assetAllocationId;
+
+    /**
+     * @var date $startDate
+     *
+     * @ORM\Column(name="start_date", type="date", nullable=true)
+     */
+    private $startDate;
+
+    /**
+     * @var date $endDate
+     *
+     * @ORM\Column(name="end_date", type="date", nullable=true)
+     */
+    private $endDate;
+
+    /**
+     * @var date $createdDate
+     *
+     * @ORM\Column(name="created_date", type="date", nullable=true)
+     */
+    private $createdDate;
+
+    /**
+     * @var integer $portfolioId
+     *
+     * @ORM\Column(name="portfolio_id", type="integer", nullable=true)
+     */
+    private $portfolioId;
+
+
+    /**
+     * Get assetAllocationId
+     *
+     * @return integer 
+     */
+    public function getAssetAllocationId()
+    {
+        return $this->assetAllocationId;
+    }
+
+    /**
+     * Set startDate
+     *
+     * @param date $startDate
+     * @return GmaAssetAllocation
+     */
+    public function setStartDate($startDate)
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * Get startDate
+     *
+     * @return date 
+     */
+    public function getStartDate()
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * Set endDate
+     *
+     * @param date $endDate
+     * @return GmaAssetAllocation
+     */
+    public function setEndDate($endDate)
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * Get endDate
+     *
+     * @return date 
+     */
+    public function getEndDate()
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * Set createdDate
+     *
+     * @param date $createdDate
+     * @return GmaAssetAllocation
+     */
+    public function setCreatedDate($createdDate)
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * Get createdDate
+     *
+     * @return date 
+     */
+    public function getCreatedDate()
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * Set portfolioId
+     *
+     * @param integer $portfolioId
+     * @return GmaAssetAllocation
+     */
+    public function setPortfolioId($portfolioId)
+    {
+        $this->portfolioId = $portfolioId;
+        return $this;
+    }
+
+    /**
+     * Get portfolioId
+     *
+     * @return integer 
+     */
+    public function getPortfolioId()
+    {
+        return $this->portfolioId;
+    }
+}

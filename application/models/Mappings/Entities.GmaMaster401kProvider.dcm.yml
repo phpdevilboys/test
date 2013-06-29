@@ -1,0 +1,19 @@
+Entities\GmaMaster401kProvider:
+  type: entity
+  table: gma_master_401k_provider
+  fields:
+    providerId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: provider_id
+      generator:
+        strategy: SEQUENCE
+    providerName:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: provider_name
+  lifecycleCallbacks: {  }

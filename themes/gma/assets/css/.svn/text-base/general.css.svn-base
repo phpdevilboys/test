@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+/******* GENERAL RESET *******/
+
+/******* FORM *******/
+
+.error{
+    color: #F60100;
+}
+.error_message{
+	color: #F60100;	
+	margin:-10px 0px 8px 5px;
+}
+
+.modalBox
+{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    border-radius: 8px 8px 8px 8px;
+    height: auto;
+    left: 50% !important;
+    margin-left: -294px !important;
+    padding: 8px;
+    position: fixed !important;
+    top: 10% !important;
+    visibility: hidden;
+    width: 600px;
+    z-index: 101;
+}
+.paragraphAsset {
+    float: left;
+    margin: 0 0 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 600px;
+}
+
+.assetSpanfont {
+    float: left;
+    font-weight: bold;
+    margin: 6px 4px 0px 15px;
+    text-align: right;
+}
+
+.buttonBox{
+    float: left;
+    padding-left: 180px;
+    width: 45%;
+}
+/******* /FORM *******/

@@ -1,0 +1,41 @@
+Entities\EntryRevisions:
+  type: entity
+  table: entry_revisions
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    entryId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: entry_id
+    contentTypeId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: content_type_id
+    authorId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: author_id
+    authorName:
+      type: string
+      length: 150
+      fixed: false
+      nullable: false
+      column: author_name
+    revisionDate:
+      type: datetime
+      nullable: false
+      column: revision_date
+    revisionData:
+      type: text
+      nullable: false
+      column: revision_data
+  lifecycleCallbacks: {  }

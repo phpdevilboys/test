@@ -1,0 +1,37 @@
+Entities\Galleries:
+  type: entity
+  table: galleries
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    title:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    resize:
+      type: smallint
+      nullable: false
+    imageWidth:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: image_width
+    imageHeight:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: image_height
+    imageCrop:
+      type: smallint
+      nullable: true
+      column: image_crop
+    thumbs:
+      type: text
+      nullable: false
+  lifecycleCallbacks: {  }

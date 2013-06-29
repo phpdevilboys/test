@@ -1,0 +1,42 @@
+first:
+    id: 
+    category_group_id: 
+    parent_id: 
+    title: 
+    url_title: 
+    description: 
+    tag_id: 
+    class: 
+    target: 
+    subcategories_visibility: 
+    hide: 
+    sort: 
+
+second:
+    id: 
+    category_group_id: 
+    parent_id: 
+    title: 
+    url_title: 
+    description: 
+    tag_id: 
+    class: 
+    target: 
+    subcategories_visibility: 
+    hide: 
+    sort: 
+
+third:
+    id: 
+    category_group_id: 
+    parent_id: 
+    title: 
+    url_title: 
+    description: 
+    tag_id: 
+    class: 
+    target: 
+    subcategories_visibility: 
+    hide: 
+    sort: 
+

@@ -1,0 +1,21 @@
+first:
+    cash_flow_id: 
+    cash_flow_date: 
+    cash_flow_type: 
+    amount: 
+    portfolio_id: 
+
+second:
+    cash_flow_id: 
+    cash_flow_date: 
+    cash_flow_type: 
+    amount: 
+    portfolio_id: 
+
+third:
+    cash_flow_id: 
+    cash_flow_date: 
+    cash_flow_type: 
+    amount: 
+    portfolio_id: 
+

@@ -1,0 +1,48 @@
+Entities\GmaMasterFinancialAdvisor:
+  type: entity
+  table: gma_master_financial_advisor
+  fields:
+    financialAdvisorId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: financial_advisor_id
+      generator:
+        strategy: SEQUENCE
+    financialAdvisorName:
+      type: string
+      length: 200
+      fixed: false
+      nullable: true
+      column: financial_advisor_name
+    financialAdvisorCrdno:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: financial_advisor_crdno
+    financialAdvisorEmailid:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: financial_advisor_emailid
+    financialAdvisorCity:
+      type: string
+      length: 100
+      fixed: false
+      nullable: true
+      column: financial_advisor_city
+    financialAdvisorState:
+      type: string
+      length: 100
+      fixed: false
+      nullable: true
+      column: financial_advisor_state
+    firmId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: firm_id
+  lifecycleCallbacks: {  }

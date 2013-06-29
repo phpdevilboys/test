@@ -1,0 +1,89 @@
+Entities\Users:
+  type: entity
+  table: users
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    password:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+    firstName:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+      column: first_name
+    lastName:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+      column: last_name
+    email:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    phone:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+    address:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    address2:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    city:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    state:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    zip:
+      type: string
+      length: 15
+      fixed: false
+      nullable: false
+    groupId:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: group_id
+    enabled:
+      type: smallint
+      nullable: false
+    activated:
+      type: smallint
+      nullable: false
+    activationCode:
+      type: string
+      length: 32
+      fixed: false
+      nullable: true
+      column: activation_code
+    lastLogin:
+      type: datetime
+      nullable: true
+      column: last_login
+    createdDate:
+      type: datetime
+      nullable: false
+      column: created_date
+  lifecycleCallbacks: {  }

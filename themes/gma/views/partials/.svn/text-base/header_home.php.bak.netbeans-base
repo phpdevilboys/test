@@ -1,0 +1,35 @@
+ <div class="banner_home" >
+    <img src="{{ theme_url }}/assets/images/banner_home.png" />
+    </div>
+    <!--mid-->
+    <div id="adsdiv" >
+      <div class="midleft" ></div>
+    <div class="commoncolor blue" >
+        
+    </div>
+    <div class="commoncolor green" >
+        <h1 class="myriadpro">View a Sample Report</h1>
+        <div class="blue_inner" >
+            <div class="txt" >
+			  We believe that all investors are entitled to investment performance that justifies the fees! This analysis uses “Returns Based Style Analysis” -employing the ...
+            </div>
+            <img src="{{ theme_url }}/assets/images/greenimg.png" alt="View a Sample Report" border="0" width="104" height="102" />
+            <div class="clear"></div>
+        </div>
+        <div class="readmorebt"><a href="#"></a></div>
+    </div>
+    <div class="commoncolor orange" >
+        <h1 class="myriadpro">Purchase a Report</h1>
+        <div class="blue_inner" >
+            <div class="txt" >
+                We feel this is the best way to create an apples-to-apples comparison of your returns and the returns of your Asset Allocation Model. As far as we ...
+            </div>
+            <img src="{{ theme_url }}/assets/images/orangeimg.png" alt="Purchase a Report" border="0" width="104" height="102" />
+            <div class="clear"></div>
+        </div>
+        <div class="readmorebt"><a href="#"></a></div>
+    </div>
+      <div class="midright"></div>
+      <div class="clear"></div>
+    </div>
+   <!--mid-->

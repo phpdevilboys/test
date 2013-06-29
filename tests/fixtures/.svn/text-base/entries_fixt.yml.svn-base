@@ -1,0 +1,45 @@
+first:
+    id: 
+    slug: 
+    title: 
+    url_title: 
+    required: 
+    content_type_id: 
+    status: 
+    meta_title: 
+    meta_description: 
+    meta_keywords: 
+    created_date: 
+    modified_date: 
+    author_id: 
+
+second:
+    id: 
+    slug: 
+    title: 
+    url_title: 
+    required: 
+    content_type_id: 
+    status: 
+    meta_title: 
+    meta_description: 
+    meta_keywords: 
+    created_date: 
+    modified_date: 
+    author_id: 
+
+third:
+    id: 
+    slug: 
+    title: 
+    url_title: 
+    required: 
+    content_type_id: 
+    status: 
+    meta_title: 
+    meta_description: 
+    meta_keywords: 
+    created_date: 
+    modified_date: 
+    author_id: 
+

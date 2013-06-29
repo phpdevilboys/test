@@ -1,0 +1,28 @@
+Entities\ContentFieldTypes:
+  type: entity
+  table: content_field_types
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    title:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+    modelName:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+      column: model_name
+    datatype:
+      type: string
+      length: 50
+      fixed: false
+      nullable: false
+  lifecycleCallbacks: {  }

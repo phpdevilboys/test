@@ -1,0 +1,24 @@
+first:
+    id: 
+    name: 
+    type: 
+    permissions: 
+    required: 
+    modifiable_permissions: 
+
+second:
+    id: 
+    name: 
+    type: 
+    permissions: 
+    required: 
+    modifiable_permissions: 
+
+third:
+    id: 
+    name: 
+    type: 
+    permissions: 
+    required: 
+    modifiable_permissions: 
+

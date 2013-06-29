@@ -1,0 +1,36 @@
+Entities\Video:
+  type: entity
+  table: video
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: SEQUENCE
+    title:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+    videoCode:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: video_code
+    description:
+      type: text
+      nullable: true
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    videoType:
+      type: string
+      length: 10
+      fixed: false
+      nullable: true
+      column: video_type
+  lifecycleCallbacks: {  }

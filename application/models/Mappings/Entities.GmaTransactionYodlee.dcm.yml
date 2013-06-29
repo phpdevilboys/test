@@ -1,0 +1,122 @@
+Entities\GmaTransactionYodlee:
+  type: entity
+  table: gma_transaction_yodlee
+  fields:
+    yodleeTransactionId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: yodlee_transaction_id
+      generator:
+        strategy: SEQUENCE
+    accountName:
+      type: string
+      length: 150
+      fixed: false
+      nullable: true
+      column: account_name
+    amount:
+      type: float
+      nullable: true
+    currencyCode:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: currency_code
+    currencyId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: currency_id
+    category:
+      type: string
+      length: 100
+      fixed: false
+      nullable: true
+    categoryId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: category_id
+    categoryTypeId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: category_type_id
+    container:
+      type: string
+      length: 75
+      fixed: false
+      nullable: true
+    itemAccountId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: item_account_id
+    txnBaseType:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: txn_base_type
+    businessExpense:
+      type: string
+      length: 10
+      fixed: false
+      nullable: true
+      column: business_expense
+    medicalExpense:
+      type: string
+      length: 10
+      fixed: false
+      nullable: true
+      column: medical_expense
+    memo:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+    reimbursable:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+    txtSimpleDescription:
+      type: text
+      nullable: true
+      column: txt_simple_description
+    sharedTxn:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: shared_txn
+    taxDeductible:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: tax_deductible
+    txnId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: txn_id
+    txnStatus:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: txn_status
+    createdDate:
+      type: datetime
+      nullable: true
+      column: created_date
+    portfolioId:
+      type: integer
+      unsigned: false
+      nullable: true
+      column: portfolio_id
+  lifecycleCallbacks: {  }

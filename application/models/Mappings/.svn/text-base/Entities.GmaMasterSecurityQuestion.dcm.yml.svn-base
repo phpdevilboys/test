@@ -1,0 +1,18 @@
+Entities\GmaMasterSecurityQuestion:
+  type: entity
+  table: gma_master_security_question
+  fields:
+    quesId:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      column: ques_id
+      generator:
+        strategy: SEQUENCE
+    question:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+  lifecycleCallbacks: {  }

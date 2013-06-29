@@ -1,0 +1,33 @@
+first:
+    id: 
+    content_type_id: 
+    content_field_type_id: 
+    label: 
+    short_tag: 
+    required: 
+    options: 
+    settings: 
+    sort: 
+
+second:
+    id: 
+    content_type_id: 
+    content_field_type_id: 
+    label: 
+    short_tag: 
+    required: 
+    options: 
+    settings: 
+    sort: 
+
+third:
+    id: 
+    content_type_id: 
+    content_field_type_id: 
+    label: 
+    short_tag: 
+    required: 
+    options: 
+    settings: 
+    sort: 
+
