@@ -14,7 +14,7 @@
 		<exec dir="${basedir}/tests/" executable="phpunit" failonerror="false">
 			<arg line="--coverage-clover ${output}/CodeCoverage/clover.xml 
 				--coverage-html ${output}/CodeCoverage/ 
-				."/>
+				"/>
 		</exec>
 	</target>
 
@@ -45,14 +45,4 @@
 			" />
 		</exec>
 	</target>
-
-	<target name="phpcs">
-		<exec dir="${basedir}" executable="phpcs" failonerror="false"> 
-			<arg line="--report=checkstyle
-              			--report-file=${output}/phpcs/checkstyle.xml
-              			--standard=Zend
-              			. 
-              		" />
-		</exec>
-	</target>	
 </project>

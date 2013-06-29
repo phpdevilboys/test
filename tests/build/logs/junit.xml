@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="ModelTests" tests="5" assertions="2" failures="0" errors="0" time="0.597748">
+    <testsuite name="MemberModelTest" file="/var/www/rnd/jenkins/test/tests/models/MemberModelTest.php" tests="2" assertions="1" failures="0" errors="0" time="0.409338">
+      <testsuite name="MemberModelTest::testGetCarriers" tests="1" assertions="1" failures="0" errors="0" time="0.320764">
+        <testcase name="testGetCarriers with data set #0" assertions="1" time="0.320764"/>
+      </testsuite>
+      <testcase name="testGetCarriersData" class="MemberModelTest" file="/var/www/rnd/jenkins/test/tests/models/MemberModelTest.php" line="60" assertions="0" time="0.088574"/>
+    </testsuite>
+    <testsuite name="Member_model_test" file="/var/www/rnd/jenkins/test/tests/models/Member_model_test.php" fullPackage="Member.model" tests="2" assertions="1" failures="0" errors="0" time="0.185706">
+      <testsuite name="Member_model_test::testGetCarriers" tests="1" assertions="1" failures="0" errors="0" time="0.095930">
+        <testcase name="testGetCarriers with data set #0" assertions="1" time="0.095930"/>
+      </testsuite>
+      <testcase name="testGetCarriersData" class="Member_model_test" file="/var/www/rnd/jenkins/test/tests/models/Member_model_test.php" line="60" assertions="0" time="0.089776"/>
+    </testsuite>
+    <testsuite name="SomeModelTest" file="/var/www/rnd/jenkins/test/tests/models/SomeModelTest.php" tests="1" assertions="0" failures="0" errors="0" time="0.002704">
+      <testcase name="testProductFetching" class="SomeModelTest" file="/var/www/rnd/jenkins/test/tests/models/SomeModelTest.php" line="41" assertions="0" time="0.002704"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
